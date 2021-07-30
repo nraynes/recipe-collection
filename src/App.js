@@ -1,25 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import TopBar from './components/top-bar/TopBar'
+import SideBar from './components/side-bar/SideBar'
+// import CurrentRecipe from './components/current-recipe/CurrentRecipe'
+import React, { useContext, useEffect, useState} from 'react';
+import NewRecipe from './components/new-recipe/NewRecipe'
+import { Switch, Route } from 'react-router-dom'
 
-function App() {
+const App = () => {
+  const [initialRecipes, setInitialRecipes] = useState()
+  const [shownRecipeList, setShownRecipeList] = useState(initialRecipes)
+  console.log(shownRecipeList)
+  useEffect(() => {
+    fetch ('http://localhost:3000/recipes')
+      .then((data) => data.json())
+      .then((data) => {
+        setInitialRecipes(data.recipes)
+      })
+  }, [setInitialRecipes])
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <TopBar/>
+        <Route path='/newRecipe' component={props => <NewRecipe {...props}/>}></Route>
       </header>
-    </div>
+      
+      <div className='mainPage'>
+        <Switch>
+        <SideBar recipeList={shownRecipeList} recipeInit={initialRecipes} setRecipeList={(newList) => setShownRecipeList(newList)} />
+        {/* <CurrentRecipe/> */}
+        </Switch>
+      </div>
+    </>
   );
-}
-
+};
 export default App;

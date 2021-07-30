@@ -1,0 +1,16 @@
+{ 
+  "recipes": 
+  [
+    {
+      "name": "Spaghetti",
+      "ingredients": ["sauce", "noodles", "parm"], 
+      "steps": ["boil water", "add pasta", "drain pasta", "heat sauce", "combine all", "add parm"]
+    },
+    {
+      "name": "PB&J",
+      "ingredients": ["pb","jelly", "bread"], 
+      "steps": ["get bread", "add pb", "add jelly", "combine"]
+    }
+  ]
+}
+ 
