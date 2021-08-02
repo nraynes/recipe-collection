@@ -1,0 +1,30 @@
+nav {
+    display: flex;
+    height: 80px;
+    min-width: 540px;
+    background-image: linear-gradient(to right, cadetblue, rgb(65, 74, 75));
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-color: rgb(88, 118, 119);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+nav h1 {
+    margin-left: 25px;
+    font-size: 32px;
+    text-decoration: underline;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav button {
+    margin-right: 25px;
+    border: 0px;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:darkturquoise;
+    color: white;
+}

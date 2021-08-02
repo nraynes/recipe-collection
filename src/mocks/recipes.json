@@ -3,13 +3,13 @@
   [
     {
       "name": "Spaghetti",
-      "ingredients": ["sauce", "noodles", "parm"], 
-      "steps": ["boil water", "add pasta", "drain pasta", "heat sauce", "combine all", "add parm"]
+      "ingredients": ["Pasta Sauce", "Spaghetti Noodles", "Parmesan Cheese"], 
+      "steps": ["1. Boil water.", "2. Add pasta and cook.", "3. Drain pasta.", "4. Heat sauce.", "5. Combine all.", "6. Add parm."]
     },
     {
       "name": "PB&J",
-      "ingredients": ["pb","jelly", "bread"], 
-      "steps": ["get bread", "add pb", "add jelly", "combine"]
+      "ingredients": ["Peanut Butter","Jelly", "Bread"], 
+      "steps": ["1. Get bread.", "2. Add peanut butter.", "3. Add jelly.", "4. Combine."]
     }
   ]
 }

@@ -1,13 +1,14 @@
-import './TopBar.css'
-import React from 'react'
-import NewRecipe from '../new-recipe/NewRecipe'
-import { Link } from 'react-router-dom';
+import './TopBar.css';
+import React from 'react';
 
-const TopBar = () => {
+const TopBar = (props) => {
+    const { newRecipe, setNewRecipe } = props;
     return (
-        <nav id='nav-bar'>
+        <nav>
             <h1>Recipe App</h1>
-            <Link to='/newRecipe'><button>New Recipe</button></Link>
+            <button onClick={() => {
+                setNewRecipe(!newRecipe)
+            }}>New Recipe</button>
         </nav>
     );
 };

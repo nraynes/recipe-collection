@@ -1,0 +1,21 @@
+#stepsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: calc(100vw - 500px);
+}
+#recName {
+    margin: 30px;
+    font-size: 40px;
+    text-decoration: underline;
+}
+#step {
+    display: flex;
+    background-color: darkturquoise;
+    width: 90%;
+    min-height: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    align-items: center;
+    text-indent: 20px;
+}

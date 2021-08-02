@@ -1,0 +1,23 @@
+#ingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 250px;
+    height: 100vmax;
+    border-left-color: rgb(88, 118, 119);
+    border-left-style: solid;
+    border-left-width: 1px;
+    background-image: linear-gradient(to bottom, rgb(65, 74, 75), cadetblue);
+}
+#ing {
+    display: flex;
+    width: 80%;
+    min-height: 30px;
+    background-color: darkturquoise;
+    border: 0px;
+    border-radius: 7px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}

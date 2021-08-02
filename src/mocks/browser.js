@@ -6,6 +6,16 @@ const Worker = setupWorker(
         return res(cxt.json(
             data
         ))
+    }),
+    rest.post('/setRecipes', (req, res, cxt) => {
+        data.recipes.push(req.body)
+
+        //possibly write to recipes.json in the future.
+
+        return res(cxt.json(
+            data
+        ))
+
     })
 )
 

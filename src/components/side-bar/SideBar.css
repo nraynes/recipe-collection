@@ -1,0 +1,28 @@
+.sideBar {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, cadetblue, rgb(65, 74, 75));
+    border-right-color: rgb(88, 118, 119);
+    border-right-style: solid;
+    border-right-width: 1px;
+    width: 250px;
+    height: 100vmax;
+    align-items: center;
+}
+#filterBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+#filterBar input {
+    width: 160px;
+    height: 20px;
+    margin-left: 4px;
+    border-radius: 4px;;
+}
+#recipeList {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: repeat(2, 1fr);
+}

@@ -1,8 +1,9 @@
 import './recipe.css'
+import { Link } from 'react-router-dom';
 
-const Recipe = ({name}) => {
+const Recipe = (props) => {
     return (
-      <div>{name}</div>
+      <Link to={`/${props.name}`} name='recipe'><div id='recipe'><p>{props.name}</p></div></Link>
     )
 }
 
